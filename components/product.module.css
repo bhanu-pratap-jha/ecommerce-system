@@ -1,0 +1,110 @@
+/* product.module.css */
+
+.container {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #4d5bce;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    text-align: center;
+  }
+  
+  .productList {
+    display: flex;
+    flex-wrap: wrap;              /* Allow cards to wrap in smaller screens */
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .productCard {
+    background-color: #808080;   /* Gray color */
+    border: 1px solid #1e2d3d;
+    width: 30cm;                  /* Minimum width of 7 cm */
+    height: 5cm;                  /* Minimum height of 5 cm */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;             /* Align text to the left */
+    color: #607b96;
+    display: flex;
+    flex-direction: row;          /* Arrange image and text horizontally */
+    position: relative;           /* Required for absolute positioning of button */
+  }
+  
+  .imageContainer {
+    width: 25%;                   /* Image takes up 1/4 of the card */
+    height: 100%;                 /* Fill the entire height of the card */
+  }
+  
+  .details {
+    width: 75%;                   /* Remaining part of the card for text */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .productName {
+    font-size: 1.5rem;
+    color: #fea55f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .productDescription {
+    font-size: 1rem;
+    color: #a1b2c3;
+    margin-bottom: 0.5rem;
+  }
+  
+  .productPrice {
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+  
+  /* "Add to Cart" Button Styling */
+  .addToCartButton {
+    position: absolute;
+    right: 1rem;                  /* Align the button to the right side of the card */
+    bottom: 1rem;                 /* Place the button near the bottom */
+    width: 5cm;                   /* Make button wider for uniformity */
+    height: 1.5cm;                /* Adjust height for a balanced look */
+    background-color: #4caf50;    /* Green background */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #45a049;    /* Darker green on hover */
+    transform: scale(1.05);        /* Slightly scale up the button */
+  }
+  
+  .addToCartButton:focus {
+    outline: none;               /* Remove default focus outline */
+  }
+  
+  /* Notification Styling */
+  .notification {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
